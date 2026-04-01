@@ -54,7 +54,7 @@ def get_albums():
     return jsonify(res.json())
 
 
-# GET single album
+
 @app.route('/albums/<int:album_id>')
 def get_album(album_id):
     res = requests.get(f"{BASE_URL}/albums/{album_id}")
